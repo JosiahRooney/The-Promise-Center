@@ -1,0 +1,459 @@
+///////////////////////////////////////////////////////////
+//
+//     Promise Center - Real People, Real Promises, Real CSS
+//
+//     Table of Contents
+//
+///////////////////////////////////////////////////////////
+//
+//   0.0 - Constants
+//   1.0 - Reset
+//   2.0 - Globals
+//   3.0 - Fonts & Colors
+//   4.0 - Utilities
+//   5.0 - Navigation
+//   6.0 - Branding
+//   7.0 - Hero
+//   8.0 - Homepage
+//   9.0 - Interior
+//  10.0 - Footer
+//  11.0 - Misc
+//
+///////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////
+//   0.0 - Constants
+///////////////////////////////////////////////////////////
+
+// Colors
+$light_orange = #f59f00
+$dark_orange = #e05d39
+$pale_green = #819152
+$light_blue = #00c4fe
+
+// Fonts
+$raleway = 'Raleway', sans-serif
+$josefin = 'Josefin Slab', serif
+$sedgwick = 'Sedgwick Ave', cursive
+$gloria = 'Gloria Hallelujah', cursive
+
+
+///////////////////////////////////////////////////////////
+//   1.0 - Reset (in theme root, style.css, to load before Bootstrap)
+///////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////
+//   2.0 - Globals
+///////////////////////////////////////////////////////////
+
+*
+  box-sizing border-box
+
+body
+  font-family $raleway
+
+img
+  max-width 100%
+  height auto
+
+.btn
+  border-radius 0
+  box-shadow 0 4px 11px -2px rgba(0,0,0,0.4)
+  transition 0.3s all
+  &:hover
+    transition 0.3s all
+
+.btn-info
+  background-color $light_blue
+  border-color darken($light_blue, 20%)
+
+  &:hover
+    background-color darken($light_blue, 20%)
+    border-color darken($light_blue, 40%)
+
+.btn-success
+  background-color $pale_green
+  border-color darken($pale_green, 20%)
+
+  &:hover
+    background-color darken($pale_green, 20%)
+    border-color darken($pale_green, 40%)
+
+.btn-danger
+  background-color $dark_orange
+  border-color darken($dark_orange, 10%)
+
+  &:hover
+    background-color darken($dark_orange, 10%)
+    border-color darken($dark_orange, 20%)
+
+.btn-warning
+  background-color $light_orange
+  border-color darken($light_orange, 10%)
+
+  &:hover
+    background-color darken($light_orange, 10%)
+    border-color darken($light_orange, 20%)
+
+
+
+///////////////////////////////////////////////////////////
+//   3.0 - Fonts & Colors
+///////////////////////////////////////////////////////////
+
+
+
+
+///////////////////////////////////////////////////////////
+//   4.0 - Utilities
+///////////////////////////////////////////////////////////
+
+
+
+
+///////////////////////////////////////////////////////////
+//   5.0 - Navigation
+///////////////////////////////////////////////////////////
+
+.menu-container
+
+  .menu-button
+    padding-top 37px
+    transition 0.3s all
+
+    i
+      font-size 5rem
+      color #333
+
+
+///////////////////////////////////////////////////////////
+//   6.0 - Branding
+///////////////////////////////////////////////////////////
+
+.primary-header
+  height 121px
+  position fixed
+  background-color #fff
+  z-index 9
+  width 100%
+  top 0
+  transition 0.3s all
+  border-bottom 6px solid #ddd
+
+// Shrink Header - after scrolling down 200 pixels
+.shrink-header
+  height 80px
+  transition 0.3s all
+
+  .branding
+    padding-top 0
+    transition 0.3s all
+
+    .site-title
+      margin-top 17px
+      font-size 4.4rem
+      transition 0.3s all
+
+    .site-logo
+      width 80px
+      padding-top 7px
+      transition 0.3s all
+
+  .menu-container .menu-button
+    padding-top 16px
+    transition 0.3s all
+
+// End Shrink Header
+
+
+.logged-in .primary-header
+  top 32px
+
+.branding
+  padding-top 12px
+  padding-bottom 18px
+  transition 0.3s all
+
+.site-title
+  font-weight bold
+  font-size 5.6rem
+  text-transform uppercase
+
+.site-logo
+  padding-top 5px
+  padding-right 20px
+  height auto
+  width 100px
+
+.site-title
+.site-logo
+  vertical-align middle
+  display inline-block
+  transition 0.3s all
+
+///////////////////////////////////////////////////////////
+//   7.0 - Hero
+///////////////////////////////////////////////////////////
+
+.hero
+  margin-top 40px
+  position relative
+  min-height 55vh
+  background-image url("../images/worship.jpg")
+  background-position center
+  background-size cover
+
+  .hero__image
+    width 100%
+    height auto
+
+.hero__message
+.hero__footer
+  position absolute
+  bottom 0
+  width 100%
+
+.hero__message
+  bottom 120px
+  text-align right
+
+.social-icons
+  text-align center
+  padding-bottom 30px
+
+  .social-icon
+    display inline-block
+    vertical-align top
+
+    i
+      color white
+      font-size 5rem
+      padding 0 22px
+      transition 0.3s color
+
+      &:hover
+        transition 0.3s color
+
+    .fa-facebook-square
+      &:hover
+        color #3b5998
+
+    .fa-instagram
+      &:hover
+        color #bc2a8d
+
+    .fa-vimeo-square
+      &:hover
+        color #4ebbff
+
+    // .fa-phone
+
+    .fa-map-marker
+      &:hover
+        color #ea4b36
+
+  .social-icon-phone
+    @media (min-width 800px)
+      display none
+
+
+///////////////////////////////////////////////////////////
+//   8.0 - Homepage
+///////////////////////////////////////////////////////////
+
+// Services
+.services
+  background-color #000002
+  padding 20px
+  color white
+  padding-bottom 60px
+
+.service-times-title
+  font-family $sedgwick
+  font-size 5rem
+
+.service-time
+  text-align center
+  padding 20px 60px
+  border 2px solid white
+  margin 30px 100px
+  font-size 2.3rem
+  transition 0.4s background-color
+  &:hover
+    background-color rgba(255,255,255,0.08)
+    transition 0.4s background-color
+
+
+// Sermons
+.sermons
+  border-top 6px solid #151515
+  color #ddd
+  background-image url("../images/background-patterns/footer_lodyas.png")
+  padding-top 30px
+  padding-bottom 60px
+
+  .responsive-iframe-container
+    position relative
+    width 100%
+    padding-bottom 56.2%
+    margin-bottom 25px
+
+  iframe
+    position absolute
+    box-shadow 0 0 25px rgba(0,0,0,0.5)
+    border 6px solid #050505
+    width 100%
+    height 100%
+    top 0
+    left 0
+
+
+.sermon-caption
+  margin-bottom 45px
+
+.sermons-title
+  font-size 5rem
+  font-weight bold
+  margin-bottom 30px
+
+
+// Events
+.events
+  box-shadow 0 -30px 35px -15px rgba(0,0,0,0.7)
+  background-color #ddd
+  padding-top 30px
+  padding-bottom 60px
+
+  .events-title
+    font-size 5.3rem
+    font-family $gloria
+    padding-bottom 38px
+
+    small
+      font-family $raleway
+
+.event
+  padding-top 20px
+  border 0
+  border-radius 2px
+  color #fff
+  position relative
+  background-color rgba(0,0,0,0.7)
+  box-shadow 0 0 3px rgba(0,0,0,0.5)
+
+  .btn
+    margin-top 25px
+
+  .event-title
+    font-weight bold
+    margin-bottom 20px
+
+  .event-image
+    border 1px solid #222
+    margin-top 20px
+    margin-left 20px
+    margin-bottom 15px
+    height auto
+    width 300px
+    float right
+
+.event-date
+  padding-top 10px
+  position relative
+
+  i
+    font-size 10rem
+    color $dark_orange
+
+.event-date-smaller
+  padding-top 0
+
+  i
+    font-size 6.4rem
+
+  .event-date-inner
+    top 12px
+
+    .event-date-number
+      font-size 3.8rem
+
+    .event-date-month
+      font-size 1.8rem
+
+.event-date-inner
+  position absolute
+  top 30px
+  text-align center
+  width calc(100% - 30px)
+
+  .event-date-number
+    font-size 5.5rem
+
+  .event-date-month
+    text-align center
+    padding-top 4px
+    font-size 2rem
+    font-weight bold
+
+.more-events
+  padding-top 30px
+
+
+// Groups
+
+.groups
+  padding-top 30px
+
+  .lead
+    margin-bottom 50px
+
+  .groups-title
+    // font-family $sedgwick
+    font-weight bold
+    font-size 5rem
+    padding-bottom 15px
+
+  .groups-grid
+
+    .groups-action
+      position relative
+
+      img
+        filter grayscale(100%)
+        transition 0.3s filter
+
+      &:hover
+        img
+          filter grayscale(0%)
+          transition 0.3s filter
+
+    h3
+      position absolute
+      bottom -45px
+      left 0
+      width 100%
+      background-color #fff
+      padding-top 15px
+
+
+
+
+
+///////////////////////////////////////////////////////////
+//   9.0 - Interior
+///////////////////////////////////////////////////////////
+
+
+
+
+///////////////////////////////////////////////////////////
+//  10.0 - Footer
+///////////////////////////////////////////////////////////
+
+.footer
+  height 500px
+
+
+///////////////////////////////////////////////////////////
+//  11.0 - Misc
+///////////////////////////////////////////////////////////
