@@ -14,7 +14,7 @@
 
     <div class="hero__footer">
 
-      <div class="social-icons">
+      <div class="body-social-icons social-icons">
 
         <div class="social-icon">
           <a href="#">
@@ -136,6 +136,10 @@
 
         <h2 class="events-title text-center">Coming Up <small><?php echo date("F jS, Y");?></small></h2>
 
+
+
+
+
         <div class="event well">
 
           <div class="event-date text-center col-sm-3">
@@ -170,7 +174,11 @@
 
         </div>
 
-        <div class="event well">
+
+
+
+
+        <div class="event event-small well">
 
           <div class="event-date event-date-smaller text-center col-sm-3">
 
@@ -196,7 +204,7 @@
 
           <div class="col-sm-3">
 
-            <a href="#"><button class="btn btn-success" type="button" name="button">More Info <i class="fa fa-caret-right" aria-hidden="true"></i></button></a>
+            <a class="pull-right" href="#"><button class="btn btn-success" type="button" name="button">More Info <i class="fa fa-caret-right" aria-hidden="true"></i></button></a>
 
           </div>
 
@@ -204,7 +212,12 @@
 
         </div>
 
-        <div class="event well">
+
+
+
+
+
+        <div class="event event-small well">
 
           <div class="event-date event-date-smaller text-center col-sm-3">
 
@@ -230,13 +243,17 @@
 
           <div class="col-sm-3">
 
-            <a href="#"><button class="btn btn-success" type="button" name="button">More Info <i class="fa fa-caret-right" aria-hidden="true"></i></button></a>
+            <a class="pull-right" href="#"><button class="btn btn-success" type="button" name="button">More Info <i class="fa fa-caret-right" aria-hidden="true"></i></button></a>
 
           </div>
 
           <div class="clearfix"></div>
 
         </div>
+
+
+
+
 
         <div class="more-events text-center">
 
@@ -252,37 +269,41 @@
 
   <div class="groups">
 
-    <div class="container">
+    <div class="gradient">
 
-      <div class="row">
+      <div class="container">
 
-        <h2 class="groups-title text-center">Groups</h2>
+        <div class="row">
 
-        <p class="lead text-center">We are not a church that has small groups, we are a church of small groups.</p>
+          <h2 class="groups-title text-center">Groups</h2>
 
-        <div class="groups-grid">
+          <p class="lead text-center">We are not a church that has small groups, we are a church of small groups.</p>
 
-          <div class="groups-action col-md-4">
+          <div class="groups-grid">
 
-            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/unsplash/get-info.jpg" alt=""></a>
+            <div class="groups-action col-md-4">
 
-            <a class="btn btn-lg btn-success btn-block" href="#">Get Info</a>
+              <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/unsplash/get-info.jpg" alt=""></a>
 
-          </div>
+              <a class="btn btn-lg btn-success btn-block" href="#">Get Info</a>
 
-          <div class="groups-action col-md-4">
+            </div>
 
-            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/small-groups.jpg" alt=""></a>
+            <div class="groups-action col-md-4">
 
-            <a class="btn btn-lg btn-success btn-block" href="#">Join</a>
+              <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/small-groups.jpg" alt=""></a>
 
-          </div>
+              <a class="btn btn-lg btn-success btn-block" href="#">Join</a>
 
-          <div class="groups-action col-md-4">
+            </div>
 
-            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/lead.jpg" alt=""></a>
+            <div class="groups-action col-md-4">
 
-            <a class="btn btn-lg btn-success btn-block" href="#">Lead</a>
+              <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/lead.jpg" alt=""></a>
+
+              <a class="btn btn-lg btn-success btn-block" href="#">Lead</a>
+
+            </div>
 
           </div>
 
@@ -300,9 +321,33 @@
 
       <div class="row">
 
+        <h2 class="give-title text-center">Give</h2>
+
+        <p class="give-lead lead text-center"><strong>Giving is an act of worship.</strong></p>
+
+        <p class="give-body lead col-md-8 col-md-offset-2">At The Promise Center we pledge to continue to be good soil for your generosity. Our purpose is to reach those that are far from God and we would love it if you joined us on our mission. There are two convenient and secure ways to give online. The first option is a one time gift. The second option is a recurring monthly, bi-weekly, or weekly gift that is either debited from your card or given directly from your bank account.</p>
+
+        <div class="give-actions col-md-8 col-md-offset-2">
+
+          <div class="col-md-6">
+
+            <a href="#"><button class="btn btn-lg btn-info btn-block" type="button" name="button">More Info</button></a>
+
+          </div>
+
+          <div class="col-md-6">
+
+            <a href="#"><button class="btn btn-lg btn-warning btn-block" type="button" name="button">Give Now</button></a>
+
+          </div>
+
+        </div>
+
       </div>
 
     </div>
+
+    <div class="overlay"></div>
 
   </div> <!-- give -->
 
@@ -311,6 +356,28 @@
     <div class="container">
 
       <div class="row">
+
+        <h2 class="app-title text-center">Get the App <small>Stay Connected</small></h2>
+
+        <div class="col-md-8 col-md-offset-2">
+
+          <div class="app-stores col-md-4">
+
+            <p class="lead">Download the app and stay engaged all week long!</p>
+
+            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/appstore.png" alt=""></a>
+
+            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/gplay.png" alt=""></a>
+
+          </div>
+
+          <div class="col-md-8">
+
+            <img class="app-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/app.png" alt="">
+
+          </div>
+
+        </div>
 
       </div>
 
@@ -324,6 +391,8 @@
 
       <div class="row">
 
+        <h2 class="about-title text-center">What We Believe</h2>
+
       </div>
 
     </div>
@@ -332,9 +401,93 @@
 
   <div class="footer">
 
-    <div class="container">
+    <div class="overlay">
 
-      <div class="row">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="footer-logo col-xs-12">
+            <img class="footer-site-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-dark.png" alt="The Promise Center Church Logo">
+          </div>
+
+          <div class="social-icons">
+
+            <div class="social-icon">
+              <a href="#">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <div class="social-icon">
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <div class="social-icon">
+              <a href="#">
+                <i class="fa fa-vimeo-square" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <div class="social-icon social-icon-phone">
+              <a href="#">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <div class="social-icon">
+              <a href="#">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </a>
+            </div>
+
+          </div> <!-- social-icons -->
+
+          <div class="footer-grid">
+
+            <div class="col-md-3">
+
+              <h3>Contact</h3>
+
+              <div class="address">
+
+                <p>791 Lombardi Ct. Suite 111<br>
+                  Santa Rosa, CA 95407</p>
+
+                <p>(707) 575-7337</p>
+
+                <h4>Office Hours</h4>
+
+                <p>Monday – Thursday  10am – 2pm </p>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+            </div>
+
+            <div class="col-md-3">
+
+            </div>
+
+            <div class="col-md-3">
+
+            </div>
+
+          </div>
+
+
+          <div class="copyright col-xs-12 text-center">
+
+            &copy; <?php echo date(Y); ?> Promise Center &mdash; All Rights Reserved
+
+          </div>
+
+        </div>
 
       </div>
 

@@ -26,7 +26,7 @@
 
     <div class="container">
 
-      <div class="row">
+      <div class="header-row row">
 
         <div class="menu-container col-md-3 col-xs-2">
 
@@ -45,6 +45,40 @@
           <h1 class="site-title"><span>P</span>romise <span>C</span>enter</h1>
 
         </div> <!-- branding -->
+
+        <div class="header-social-icons social-icons">
+
+          <div class="social-icon">
+            <a href="#">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="social-icon">
+            <a href="#">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="social-icon">
+            <a href="#">
+              <i class="fa fa-vimeo-square" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="social-icon social-icon-phone">
+            <a href="#">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="social-icon">
+            <a href="#">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+          </div>
+
+        </div> <!-- social-icons -->
 
       </div> <!-- row -->
 

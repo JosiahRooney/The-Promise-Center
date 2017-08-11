@@ -52,6 +52,10 @@ $gloria = 'Gloria Hallelujah', cursive
 body
   font-family $raleway
 
+a
+  &:hover
+    text-decoration none
+
 img
   max-width 100%
   height auto
@@ -134,7 +138,7 @@ img
   height 121px
   position fixed
   background-color #fff
-  z-index 9
+  z-index 999
   width 100%
   top 0
   transition 0.3s all
@@ -142,7 +146,7 @@ img
 
 // Shrink Header - after scrolling down 200 pixels
 .shrink-header
-  height 80px
+  height 85px
   transition 0.3s all
 
   .branding
@@ -191,6 +195,25 @@ img
   display inline-block
   transition 0.3s all
 
+.header-row
+  position relative
+
+.header-social-icons
+  opacity 0
+  position absolute
+  right 0
+  padding 14px 0
+  transition 0.3s opacity
+
+  .social-icon
+    display inline-block
+    vertical-align top
+
+    i
+      font-size 4.4rem
+      color #333
+      padding 5px 8px
+
 ///////////////////////////////////////////////////////////
 //   7.0 - Hero
 ///////////////////////////////////////////////////////////
@@ -217,6 +240,11 @@ img
   bottom 120px
   text-align right
 
+.social-icons:not(.header-social-icons) i
+  color white
+  font-size 5rem
+  padding 0 22px
+
 .social-icons
   text-align center
   padding-bottom 30px
@@ -226,9 +254,6 @@ img
     vertical-align top
 
     i
-      color white
-      font-size 5rem
-      padding 0 22px
       transition 0.3s color
 
       &:hover
@@ -289,6 +314,7 @@ img
   border-top 6px solid #151515
   color #ddd
   background-image url("../images/background-patterns/footer_lodyas.png")
+  background-attachment fixed
   padding-top 30px
   padding-bottom 60px
 
@@ -316,6 +342,10 @@ img
   font-weight bold
   margin-bottom 30px
 
+.more-sermons
+  .btn
+    font-size 2.4rem
+    padding 15px 40px
 
 // Events
 .events
@@ -398,11 +428,23 @@ img
 .more-events
   padding-top 30px
 
+  .btn
+    font-size 2.4rem
+    padding 15px 40px
+
 
 // Groups
 
 .groups
-  padding-top 30px
+  background-image url('../images/background-patterns/tree_bark.png')
+  background-attachment fixed
+
+  .gradient
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,0) 79%, rgba(255,255,255,0.01) 80%, rgba(77,77,77,0.17) 94%, rgba(0,0,0,0.25) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,0) 79%,rgba(255,255,255,0.01) 80%,rgba(77,77,77,0.17) 94%,rgba(0,0,0,0.25) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,0) 79%,rgba(255,255,255,0.01) 80%,rgba(77,77,77,0.17) 94%,rgba(0,0,0,0.25) 100%);
+    padding-top 30px
+    padding-bottom 160px
 
   .lead
     margin-bottom 50px
@@ -427,15 +469,97 @@ img
           filter grayscale(0%)
           transition 0.3s filter
 
-    h3
-      position absolute
-      bottom -45px
-      left 0
-      width 100%
-      background-color #fff
-      padding-top 15px
+      a
+        font-size 2rem
+        text-transform uppercase
+        font-weight bold
+        letter-spacing 1.7px
+        text-shadow 0 0 8px rgba(0,0,0,0.8), 0 0 1px rgba(0,0,0,0.6)
+        box-shadow 0 10px 10px -5px rgba(0,0,0,0.5)
 
 
+// Give
+
+.give
+  padding-top 60px
+  padding-bottom 90px
+  position relative
+  background-image url("../images/giving.jpg")
+  background-size cover
+  background-position center
+  color white
+  box-shadow inset 0 -10px 35px 10px rgba(0,0,0,0.5)
+
+  .give-lead
+    letter-spacing 1px
+
+  .lead
+    text-align center
+    margin-bottom 25px
+
+  .give-body
+    margin-bottom 50px
+
+  .container
+    position relative
+    z-index 9
+
+  .overlay
+    background-color rgba(0,0,0,0.5)
+    height 100%
+    width 100%
+    position absolute
+    top 0
+    left 0
+
+  .give-title
+    font-family $sedgwick
+    font-size 5rem
+
+  .btn
+    font-size 3rem
+
+
+// Get The App
+.app
+  padding-top 40px
+  padding-bottom 10px
+
+  .app-title
+    font-weight bold
+    font-size 5rem
+
+  .app-image
+    margin 60px auto
+    display block
+    height auto
+    width 370px
+
+  .app-stores
+    padding-top 70px
+
+    img
+      height auto
+      width 200px
+      margin-top 20px
+
+
+// About
+.about
+  box-shadow inset 0 45px 75px -15px rgba(0,0,0,0.33)
+  padding-top 30px
+  padding-bottom 60px
+  background-image url("../images/vineyards.jpg")
+  background-size cover
+  background-position center
+  background-attachment fixed
+  height 800px
+  color #fff
+
+  .about-title
+    font-size 5rem
+    font-weight bold
+    text-shadow 2px 2px 4px rgba(0,0,0,0.9)
 
 
 
@@ -451,7 +575,30 @@ img
 ///////////////////////////////////////////////////////////
 
 .footer
-  height 500px
+  background-color #232323
+  background-image url("../images/background-patterns/dark_wall.png")
+  color white
+
+  .overlay
+    padding-top 40px
+    padding-bottom 60px
+    min-height 500px
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.04) 0%, rgba(242,242,242,0) 5%, rgba(0,0,0,0.7) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.04) 0%,rgba(242,242,242,0) 5%,rgba(0,0,0,0.7) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.04) 0%,rgba(242,242,242,0) 5%,rgba(0,0,0,0.7) 100%);
+
+  h3
+    font-weight bold
+
+  .address
+    font-family $raleway
+
+  .footer-site-logo
+    display block
+    margin auto
+    height auto
+    width 60px
+    margin-bottom 40px
 
 
 ///////////////////////////////////////////////////////////
