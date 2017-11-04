@@ -15,12 +15,63 @@
 <body <?php body_class(); ?>>
 
   <div id="sidr">
-    <ul>
-      <li><a href="#">List 1</a></li>
-      <li><a href="#">List 2</a></li>
-      <li><a href="#">List 3</a></li>
+    <div class="side-logo">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-dark.png" alt="">
+    </div>
+    <ul class="side-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Sermons</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Calendar</a></li>
+      <li><a href="#">Groups</a></li>
+      <li><a href="#">Give</a></li>
+      <li><a href="#">Get the App</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
+    <div class="side-social-icons social-icons">
+
+      <div class="social-icon">
+        <a href="#">
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="social-icon">
+        <a href="#">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="social-icon">
+        <a href="#">
+          <i class="fa fa-vimeo-square" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="social-icon social-icon-phone">
+        <a href="#">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="social-icon">
+        <a href="#">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+        </a>
+      </div>
+
+    </div> <!-- social-icons -->
+    <div class="side-footer container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <p><small>&copy; 2017 The Promise Center &mdash; All Rights Reserved</small></p>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div class="main">
 
   <header class="primary-header">
 
@@ -85,5 +136,3 @@
     </div> <!-- container -->
 
   </header>
-
-  <div class="main">

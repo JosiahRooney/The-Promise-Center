@@ -37,6 +37,13 @@ $josefin = 'Josefin Slab', serif
 $sedgwick = 'Sedgwick Ave', cursive
 $gloria = 'Gloria Hallelujah', cursive
 
+// Breakpoints
+$desktop = 1200
+$tablet = 1000
+$phablet = 900
+$mobile = 600
+$mobile_small = 496
+
 
 ///////////////////////////////////////////////////////////
 //   1.0 - Reset (in theme root, style.css, to load before Bootstrap)
@@ -129,6 +136,33 @@ img
       font-size 5rem
       color #333
 
+.side-menu
+
+  li
+
+    a
+      font-family $raleway
+      font-size 2.2rem
+      padding 10px 20px !important
+
+.side-logo
+  box-shadow 0 0 431px 4px rgba(122,72,50,0.4)
+
+  img
+    height auto
+    width 100px
+    padding 20px
+
+.side-social-icons
+  a
+    i
+      color white
+      font-size 4.5rem
+      padding 8px
+
+.side-footer
+  color darken(white, 25%)
+
 
 ///////////////////////////////////////////////////////////
 //   6.0 - Branding
@@ -178,16 +212,42 @@ img
   padding-bottom 18px
   transition 0.3s all
 
+  @media (max-width ($mobile)px)
+    padding-top 27px
+
+  @media (max-width ($mobile_small)px)
+    padding-top 12px
+    padding-left 80px
+
 .site-title
   font-weight bold
   font-size 5.6rem
   text-transform uppercase
+
+  @media (max-width ($desktop)px)
+    font-size 5.4rem
+
+  @media (max-width ($tablet)px)
+    font-size 5rem
+
+  @media (max-width ($phablet)px)
+    font-size 4rem
+
+  @media (max-width ($mobile)px)
+    font-size 3.2rem
+
+  @media (max-width ($mobile_small)px)
+    width 100px
 
 .site-logo
   padding-top 5px
   padding-right 20px
   height auto
   width 100px
+
+  @media (max-width ($mobile)px)
+    width 50px
+    padding-right 5px
 
 .site-title
 .site-logo
@@ -240,7 +300,7 @@ img
   bottom 120px
   text-align right
 
-.social-icons:not(.header-social-icons) i
+.social-icons:not(.header-social-icons):not(.side-social-icons) i
   color white
   font-size 5rem
   padding 0 22px
@@ -567,7 +627,41 @@ img
 //   9.0 - Interior
 ///////////////////////////////////////////////////////////
 
+// Header
+$header_height = 480
 
+.header
+  height ($header_height)px
+  background-image url('../images/baby-smiling.jpg')
+  background-size cover
+  background-position center
+
+  .entry-title
+    color white
+    font-family $sedgwick
+    font-size 5rem
+    text-align center
+    text-shadow 2px 2px 4px rgba(0,0,0,0.7)
+
+  .overlay
+    padding-top ($header_height - 100)px
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0.5) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.04) 0%,rgba(0,0,0,0.5) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.04) 0%,rgba(0,0,0,0.5) 100%);
+    padding-bottom 15px
+
+// Banner
+.banner
+
+  .video-placeholder
+    background-image url("../images/hands-raised.jpg")
+    background-size cover
+    padding-bottom 56.3%
+
+// Content
+.content
+  min-height 100vh
+  padding-top 121px
 
 
 ///////////////////////////////////////////////////////////

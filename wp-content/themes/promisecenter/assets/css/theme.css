@@ -59,6 +59,27 @@ img {
   font-size: 5rem;
   color: #333;
 }
+.side-menu li a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.2rem;
+  padding: 10px 20px !important;
+}
+.side-logo {
+  box-shadow: 0 0 431px 4px rgba(122,72,50,0.4);
+}
+.side-logo img {
+  height: auto;
+  width: 100px;
+  padding: 20px;
+}
+.side-social-icons a i {
+  color: #fff;
+  font-size: 4.5rem;
+  padding: 8px;
+}
+.side-footer {
+  color: #bfbfbf;
+}
 .primary-header {
   height: 121px;
   position: fixed;
@@ -99,16 +120,58 @@ img {
   padding-bottom: 18px;
   transition: 0.3s all;
 }
+@media (max-width: 600px) {
+  .branding {
+    padding-top: 27px;
+  }
+}
+@media (max-width: 496px) {
+  .branding {
+    padding-top: 12px;
+    padding-left: 80px;
+  }
+}
 .site-title {
   font-weight: bold;
   font-size: 5.6rem;
   text-transform: uppercase;
+}
+@media (max-width: 1200px) {
+  .site-title {
+    font-size: 5.4rem;
+  }
+}
+@media (max-width: 1000px) {
+  .site-title {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 900px) {
+  .site-title {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 600px) {
+  .site-title {
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 496px) {
+  .site-title {
+    width: 100px;
+  }
 }
 .site-logo {
   padding-top: 5px;
   padding-right: 20px;
   height: auto;
   width: 100px;
+}
+@media (max-width: 600px) {
+  .site-logo {
+    width: 50px;
+    padding-right: 5px;
+  }
 }
 .site-title,
 .site-logo {
@@ -157,7 +220,7 @@ img {
   bottom: 120px;
   text-align: right;
 }
-.social-icons:not(.header-social-icons) i {
+.social-icons:not(.header-social-icons):not(.side-social-icons) i {
   color: #fff;
   font-size: 5rem;
   padding: 0 22px;
@@ -448,6 +511,35 @@ img {
   font-size: 5rem;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+}
+.header {
+  height: 480px;
+  background-image: url("../images/baby-smiling.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.header .entry-title {
+  color: #fff;
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 5rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.header .overlay {
+  padding-top: 380px;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0.5) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0.5) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0.5) 100%);
+  padding-bottom: 15px;
+}
+.banner .video-placeholder {
+  background-image: url("../images/hands-raised.jpg");
+  background-size: cover;
+  padding-bottom: 56.3%;
+}
+.content {
+  min-height: 100vh;
+  padding-top: 121px;
 }
 .footer {
   background-color: #232323;
